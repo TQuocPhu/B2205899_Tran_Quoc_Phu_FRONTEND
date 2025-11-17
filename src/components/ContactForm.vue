@@ -36,7 +36,7 @@
 
       <ErrorMessage name="address" class="error-feedback" />
     </div>
-    
+
     <div class="form-group">
       <label for="phone">Điện thoại</label>
 
@@ -113,7 +113,8 @@ export default {
         ),
     });
     return {
-      contactLocal: this.contact,
+      //   contactLocal: this.contact,
+      contactLocal: { ...this.contact },
       contactFormSchema,
     };
   },
